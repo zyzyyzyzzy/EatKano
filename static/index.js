@@ -226,7 +226,7 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
     function SubmitResults() {
         let system = "其他操作系统";
         let area = "异世界";
-        if ($("#username").val() && _gameSettingNum === 20) {
+        if ($("#username").val() && _gameSettingNum === 40) {
             const systems = [
                 ['Win', 'Windows'],
                 ['like Mac', 'iOS'],
@@ -436,7 +436,7 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
             let date2 = new Date();
             deviationTime = (date2.getTime() - _date1.getTime())
             if (!legalDeviationTime()) {
-                return '倒计时多了' + ((deviationTime / 1000) - 20).toFixed(2) + "s";
+                return '倒计时多了' + ((deviationTime / 1000) - 40).toFixed(2) + "s";
             }
             SubmitResults();
         }
